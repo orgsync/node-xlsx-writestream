@@ -1,20 +1,20 @@
 {
-  "name": "xlsx-writestream",
-  "description": "Streaming XLSX writer. Forked from rubenv/node-xlsx-writer.",
-  "version": "0.4.0",
-  "homepage": "https://github.com/STRML/node-xlsx-writestream",
-  "author": "STRML (Samuel Reed)",
+  "name": "xlsx-writestream-orgsync",
+  "description": "Streaming XLSX writer. Forked from STRML/node-xlsx-writestream.",
+  "version": "0.4.1",
+  "homepage": "https://github.com/orgsync/node-xlsx-writestream",
+  "author": "OrgSync",
   "repository": {
     "type": "git",
-    "url": "git://github.com/STRML/node-xlsx-writestream.git"
+    "url": "git://github.com/orgsync/node-xlsx-writestream.git"
   },
   "bugs": {
-    "url": "https://github.com/STRML/node-xlsx-writestream/issues"
+    "url": "https://github.com/orgsync/node-xlsx-writestream/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/STRML/node-xlsx-writestream/blob/master/LICENSE"
+      "url": "https://github.com/orgsync/node-xlsx-writestream/blob/master/LICENSE"
     }
   ],
   "main": "index.js",

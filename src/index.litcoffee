@@ -95,24 +95,12 @@ Add a single row.
       #     "A Date Column" : new Date(1999,11,31)
       # })
       addRow: (row) ->
-
-        # Values in header are defined by the keys of the object we've passed in.
-        # They need to be written the first time they're passed in.
         if !@haveHeader
           @_write(blobs.sheetDataHeader)
-          @_startRow()
-          col = 1
-          for key of row
-            @_addCell(key, col)
-            @cellMap.push(key)
-            col += 1
-          @_endRow()
-
           @haveHeader = true
 
         @_startRow()
-        for key, col in @cellMap
-          @_addCell(row[key] || "", col + 1)
+        @_addCell(cell || "", col + 1) for cell, col in row
         @_endRow()
 
 ##### addRows(rows: Array)
@@ -120,8 +108,7 @@ Add a single row.
 Rows can be added in batch.
 
       addRows: (rows) ->
-        for row in rows
-          @addRow(row)
+        @addRow(row) for row in rows
 
 ##### defineColumns(columns: Array)
 
